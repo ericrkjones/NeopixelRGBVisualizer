@@ -7796,10 +7796,10 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 <part name="Q1" library="adafruit" deviceset="CRYSTAL" device="CTS406" value="16MHz"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
-<part name="CN2" library="adafruit" deviceset="DCBARREL" device="PTH"/>
+<part name="CN2" library="adafruit" deviceset="DCBARREL" device="PTH" value="5-12VDC"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="0.33u"/>
-<part name="IC2" library="v-reg" deviceset="78LXX" device=""/>
+<part name="IC2" library="v-reg" deviceset="78LXX" device="" value="78L05ACZ-AP"/>
 <part name="U$2" library="potentiometers" deviceset="PTD901-2015K" device=""/>
 <part name="S1" library="2-1825910-7" deviceset="2-1825910-7" device=""/>
 <part name="S2" library="2-1825910-7" deviceset="2-1825910-7" device=""/>
@@ -8058,14 +8058,14 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 <wire x1="243.84" y1="-2.54" x2="182.88" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CN2" gate="G$1" pin="GNDBREAK"/>
 <pinref part="CN2" gate="G$1" pin="GND"/>
 <wire x1="187.96" y1="-15.24" x2="182.88" y2="-15.24" width="0.1524" layer="91"/>
+<label x="175.26" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="CN2" gate="G$1" pin="GNDBREAK"/>
 <wire x1="182.88" y1="-15.24" x2="175.26" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="-12.7" x2="182.88" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-12.7" x2="182.88" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="182.88" y="-15.24"/>
-<label x="175.26" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="X1" gate="1" pin="1"/>
@@ -8221,30 +8221,18 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="58.42" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="58.42" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="55.88" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="(AIN1/PCINT23)PD7"/>
 <wire x1="73.66" y1="25.4" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="25.4" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
-<junction x="167.64" y="55.88"/>
+<wire x1="160.02" y1="25.4" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="S2" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="43.18" x2="167.64" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="43.18" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="40.64" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="38.1" x2="170.18" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="40.64" x2="162.56" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="40.64" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
-<junction x="167.64" y="40.64"/>
+<wire x1="170.18" y1="43.18" x2="162.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="43.18" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="(AIN0/OC0A/PCINT22)PD6"/>
 <wire x1="162.56" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
 </segment>
@@ -8252,27 +8240,15 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 <net name="N$20" class="0">
 <segment>
 <pinref part="S3" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="27.94" x2="167.64" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="S3" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="27.94" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="25.4" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="22.86" x2="170.18" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="(T1/OC0B/PCINT21)PD5"/>
 <wire x1="73.66" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="20.32" x2="165.1" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="25.4" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
-<junction x="167.64" y="25.4"/>
+<wire x1="165.1" y1="20.32" x2="165.1" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="27.94" x2="170.18" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,187.96,55.88,CN2,PWR,VIN,,,"/>
-<approved hash="104,1,187.96,53.34,CN2,GNDBREAK,GND,,,"/>
-<approved hash="113,1,187.006,54.5169,CN2,,,,,"/>
-<approved hash="113,1,-22.86,74.1426,IC2,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
