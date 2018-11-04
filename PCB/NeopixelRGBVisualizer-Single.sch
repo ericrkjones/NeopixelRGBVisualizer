@@ -9927,7 +9927,7 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 <part name="S2" library="te_tactileswitch" deviceset="2-1825910-5" device=""/>
 <part name="S3" library="te_tactileswitch" deviceset="2-1825910-5" device=""/>
 <part name="U$3" library="MinifitJR" deviceset="0039303035" device=""/>
-<part name="JP1" library="mypinhead" deviceset="PINHD-1X2" device="/ROUND" value="POWER BUTTON"/>
+<part name="JP1" library="mypinhead" deviceset="PINHD-1X2" device="/ROUND" value="1/0"/>
 </parts>
 <sheets>
 <sheet>
