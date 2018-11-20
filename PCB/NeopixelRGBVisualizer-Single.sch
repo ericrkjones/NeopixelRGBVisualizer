@@ -9533,9 +9533,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <description>Bourns Panel/Through-hole board edge potentiometer
 
 PTD901-2015K-####</description>
-<pad name="P$1" x="-5" y="-2.5" drill="0.6"/>
-<pad name="P$2" x="-5" y="0" drill="0.6"/>
-<pad name="P$3" x="-5" y="2.5" drill="0.6"/>
+<pad name="P$1" x="-5" y="-2.5" drill="1"/>
+<pad name="P$2" x="-5" y="0" drill="1"/>
+<pad name="P$3" x="-5" y="2.5" drill="1"/>
 <wire x1="0" y1="4.75" x2="0" y2="3.5" width="0.127" layer="21"/>
 <wire x1="0" y1="3.5" x2="0" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="0" y1="-3.5" x2="0" y2="-4.75" width="0.127" layer="21"/>
@@ -9678,22 +9678,13 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 </packages>
 <symbols>
 <symbol name="1825910">
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <circle x="-2.54" y="0" radius="0.254" width="0.254" layer="94"/>
@@ -9702,9 +9693,19 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 <text x="-7.620459375" y="-7.620459375" size="1.778109375" layer="96">&gt;VALUE</text>
 <circle x="2.54" y="0" radius="0.254" width="0.254" layer="94"/>
 <pin name="1" x="-10.16" y="2.54" visible="off" length="short" direction="pas"/>
-<pin name="2" x="-10.16" y="-2.54" visible="off" length="short" direction="pas"/>
-<pin name="3" x="10.16" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="10.16" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="-10.16" y="-2.54" visible="off" length="short" direction="pas"/>
 <pin name="4" x="10.16" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9919,8 +9920,8 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
 <part name="CN2" library="adafruit" deviceset="DCBARREL" device="PTH" value="5-12VDC"/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1u"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.33u"/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.33u"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1u"/>
 <part name="IC2" library="v-reg" library_urn="urn:adsk.eagle:library:409" deviceset="78LXX" device="" package3d_urn="urn:adsk.eagle:package:30346/1" value="78L05ACZ-AP"/>
 <part name="U$2" library="potentiometers" deviceset="PTD901-2015K" device=""/>
 <part name="S1" library="te_tactileswitch" deviceset="2-1825910-5" device=""/>
@@ -10002,20 +10003,20 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 </instance>
 <instance part="IC2" gate="1" x="-22.86" y="78.74">
 <attribute name="NAME" x="-20.32" y="71.12" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-20.32" y="68.58" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-22.86" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="U$2" gate="G$1" x="177.8" y="83.82" rot="R180"/>
-<instance part="S1" gate="G$1" x="180.34" y="60.96">
-<attribute name="NAME" x="172.719759375" y="66.040159375" size="1.778059375" layer="95"/>
-<attribute name="VALUE" x="172.719540625" y="53.339540625" size="1.778109375" layer="96"/>
+<instance part="S1" gate="G$1" x="180.34" y="60.96" rot="MR0">
+<attribute name="NAME" x="187.960240625" y="66.040159375" size="1.778059375" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="187.960459375" y="53.339540625" size="1.778109375" layer="96" rot="MR0"/>
 </instance>
-<instance part="S2" gate="G$1" x="180.34" y="45.72">
-<attribute name="NAME" x="172.719759375" y="50.800159375" size="1.778059375" layer="95"/>
-<attribute name="VALUE" x="172.719540625" y="38.099540625" size="1.778109375" layer="96"/>
+<instance part="S2" gate="G$1" x="180.34" y="45.72" rot="MR0">
+<attribute name="NAME" x="187.960240625" y="50.800159375" size="1.778059375" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="187.960459375" y="38.099540625" size="1.778109375" layer="96" rot="MR0"/>
 </instance>
-<instance part="S3" gate="G$1" x="180.34" y="30.48">
-<attribute name="NAME" x="172.719759375" y="35.560159375" size="1.778059375" layer="95"/>
-<attribute name="VALUE" x="172.719540625" y="22.859540625" size="1.778109375" layer="96"/>
+<instance part="S3" gate="G$1" x="180.34" y="30.48" rot="MR0">
+<attribute name="NAME" x="187.960240625" y="35.560159375" size="1.778059375" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="187.960459375" y="22.859540625" size="1.778109375" layer="96" rot="MR0"/>
 </instance>
 <instance part="U$3" gate="G$1" x="223.52" y="7.62">
 <attribute name="NAME" x="223.52" y="7.62" size="1.778" layer="95" align="center-left"/>
@@ -10206,33 +10207,33 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 <junction x="203.2" y="71.12"/>
 </segment>
 <segment>
-<pinref part="S3" gate="G$1" pin="4"/>
-<wire x1="190.5" y1="27.94" x2="193.04" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="27.94" x2="193.04" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="3"/>
 <wire x1="193.04" y1="33.02" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="43.18" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="48.26" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="58.42" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="63.5" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="4"/>
-<wire x1="190.5" y1="58.42" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
-<junction x="193.04" y="58.42"/>
-<pinref part="S2" gate="G$1" pin="3"/>
-<wire x1="190.5" y1="48.26" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
-<junction x="193.04" y="48.26"/>
-<pinref part="S2" gate="G$1" pin="4"/>
-<wire x1="190.5" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
-<junction x="193.04" y="43.18"/>
-<pinref part="S3" gate="G$1" pin="3"/>
-<wire x1="190.5" y1="33.02" x2="193.04" y2="33.02" width="0.1524" layer="91"/>
-<junction x="193.04" y="33.02"/>
 <wire x1="193.04" y1="27.94" x2="205.74" y2="27.94" width="0.1524" layer="91"/>
 <junction x="193.04" y="27.94"/>
 <label x="205.74" y="27.94" size="1.778" layer="95" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="20.32" x2="193.04" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="20.32" x2="193.04" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="48.26" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
+<junction x="193.04" y="48.26"/>
+<pinref part="S3" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="33.02" x2="193.04" y2="33.02" width="0.1524" layer="91"/>
+<junction x="193.04" y="33.02"/>
+<pinref part="S1" gate="G$1" pin="3"/>
+<wire x1="190.5" y1="58.42" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
+<junction x="193.04" y="58.42"/>
+<pinref part="S2" gate="G$1" pin="3"/>
+<wire x1="190.5" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
+<junction x="193.04" y="43.18"/>
+<pinref part="S3" gate="G$1" pin="3"/>
+<wire x1="190.5" y1="27.94" x2="193.04" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -10351,20 +10352,20 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="(ICP1/CLK0/PCINT0)PB0"/>
 <wire x1="73.66" y1="53.34" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="53.34" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="58.42" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="53.34" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="(AIN0/OC0A/PCINT22)PD6"/>
-<wire x1="170.18" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="27.94" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="S3" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="22.86" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="33.02" x2="170.18" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -10380,9 +10381,9 @@ https://www.digikey.com/product-detail/en/molex-llc/0039303035/WM18446-ND/300079
 <segment>
 <pinref part="U$1" gate="G$1" pin="(AIN1/PCINT23)PD7"/>
 <wire x1="73.66" y1="25.4" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="25.4" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="25.4" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
