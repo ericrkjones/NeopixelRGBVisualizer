@@ -1574,6 +1574,48 @@ KS-S stereo microphone/headphone jack&lt;p&gt;
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
+<package name="1X04-OCT">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1" diameter="1.6764" shape="octagon" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1" diameter="1.6764" shape="octagon" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1" diameter="1.6764" shape="octagon" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1" diameter="1.6764" shape="octagon" rot="R90"/>
+<text x="-5.1562" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -1855,6 +1897,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP1" library="mypinhead" package="1X02-ROUND" value="1/0" x="2.2" y="24.8" rot="R90">
 <attribute name="VALUE" x="2.225" y="22.04" size="1.27" layer="25" font="vector" rot="R270" align="center-left"/>
 </element>
+<element name="JP2" library="mypinhead" package="1X04-OCT" value="" x="2.2" y="7.2" rot="R90">
+<attribute name="NAME" x="0.3712" y="2.0438" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="5.375" y="2.12" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1998,6 +2044,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="S3" pad="3"/>
 <contactref element="S1" pad="1"/>
 <contactref element="S1" pad="3"/>
+<contactref element="JP2" pad="4"/>
 </signal>
 <signal name="N$10">
 <contactref element="IC1" pad="5"/>
@@ -2115,6 +2162,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.9" y1="11.8" x2="12.8" y2="12.9" width="0.508" layer="16"/>
 <wire x1="17.96" y1="11.8" x2="13.9" y2="11.8" width="0.508" layer="16"/>
 <wire x1="19.49" y1="13.33" x2="17.96" y2="11.8" width="0.508" layer="16"/>
+<contactref element="JP2" pad="1"/>
+<wire x1="10.61" y1="11.8" x2="2.2" y2="3.39" width="0.3048" layer="1"/>
+<wire x1="17.96" y1="11.8" x2="19.49" y2="13.33" width="0.3048" layer="1"/>
+<wire x1="10.61" y1="11.8" x2="17.96" y2="11.8" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="C1" pad="1"/>
@@ -2190,6 +2241,37 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.45" y1="23.8" x2="11.3" y2="23.8" width="0.3048" layer="16"/>
 <wire x1="10.2" y1="22.7" x2="10.2" y2="13.30341875" width="0.3048" layer="16"/>
 <wire x1="11.3" y1="23.8" x2="10.2" y2="22.7" width="0.3048" layer="16"/>
+</signal>
+<signal name="TX">
+<contactref element="U$1" pad="31"/>
+<contactref element="JP2" pad="2"/>
+<wire x1="20.75" y1="28.5" x2="17.15" y2="28.5" width="0.3048" layer="1"/>
+<via x="20.75" y="28.5" extent="1-16" drill="0.35"/>
+<wire x1="20.75" y1="28.5" x2="20.75" y2="27.075" width="0.3048" layer="16"/>
+<wire x1="14.9" y1="26.25" x2="17.15" y2="28.5" width="0.3048" layer="1"/>
+<wire x1="10.1572" y1="24.85" x2="11.55" y2="26.2428" width="0.3048" layer="1"/>
+<wire x1="11.55" y1="26.2428" x2="13.88938125" y2="26.2428" width="0.3048" layer="1"/>
+<wire x1="13.88938125" y1="26.2428" x2="13.89658125" y2="26.25" width="0.3048" layer="1"/>
+<wire x1="13.89658125" y1="26.25" x2="14.9" y2="26.25" width="0.3048" layer="1"/>
+<wire x1="4.4072" y1="8.1372" x2="2.2" y2="5.93" width="0.3048" layer="1"/>
+<wire x1="4.4072" y1="8.1372" x2="4.4072" y2="12.38061875" width="0.3048" layer="1"/>
+<wire x1="10.1572" y1="18.13061875" x2="10.1572" y2="24.85" width="0.3048" layer="1"/>
+<wire x1="4.4072" y1="12.38061875" x2="10.1572" y2="18.13061875" width="0.3048" layer="1"/>
+</signal>
+<signal name="RX">
+<contactref element="U$1" pad="30"/>
+<contactref element="JP2" pad="3"/>
+<wire x1="19.95" y1="27.075" x2="19.95" y2="28.05" width="0.3048" layer="16"/>
+<wire x1="19.5" y1="28.5" x2="14.45" y2="28.5" width="0.3048" layer="16"/>
+<via x="14.45" y="28.5" extent="1-16" drill="0.35"/>
+<wire x1="14.45" y1="28.5" x2="12.65" y2="26.7" width="0.3048" layer="1"/>
+<wire x1="3.95" y1="10.22" x2="3.95" y2="12.57" width="0.3048" layer="1"/>
+<wire x1="3.95" y1="10.22" x2="2.2" y2="8.47" width="0.3048" layer="1"/>
+<wire x1="19.95" y1="28.05" x2="19.5" y2="28.5" width="0.3048" layer="16"/>
+<wire x1="9.7" y1="18.32" x2="3.95" y2="12.57" width="0.3048" layer="1"/>
+<wire x1="11.15" y1="26.7" x2="9.7" y2="25.25" width="0.3048" layer="1"/>
+<wire x1="11.15" y1="26.7" x2="12.65" y2="26.7" width="0.3048" layer="1"/>
+<wire x1="9.7" y1="18.32" x2="9.7" y2="25.25" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
