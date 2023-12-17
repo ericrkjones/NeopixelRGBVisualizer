@@ -1,3 +1,3 @@
 # Hardware notes
 
-The manufactured versions of this board use an atmega328p**b** not the typical atmega328p, you will therefore need to make sure your programmer knows this. If you are using `avrdude` you can do this wihh the parameter `-patmega328pb` for example `/usr/bin/avrdude -C/etc/avrdude.conf -v -patmega328pb -cstk500v1 -P/dev/ttyACM0 -b19200 -Uflash:w:<PATH TO HEX FILE>/MSGEQ7NeopixelTree4.ino.hex:i`
+The manufactured versions of this board use an atmega328p**b** not the typical atmega328p, you will therefore need to make sure your programmer knows this. If you are using `avrdude` you can do this wihh the parameter `-patmega328pb` for example `/usr/bin/avrdude -C/etc/avrdude.conf -v -patmega328pb -cstk500v1 -P/dev/ttyACM0 -b19200 -Uflash:w:<PATH TO HEX FILE>/MSGEQ7NeopixelTree4.ino.hex:i` or in the arduino IDE add [this](https://github.com/watterott/ATmega328PB-Testing) board file.
