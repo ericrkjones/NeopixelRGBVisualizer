@@ -49,8 +49,6 @@ unsigned long startpoint;
 const long defaultstartpoint = 0;
 // Operating mode
 byte mode = 0;
-const byte defaultmode = 0;
-
 
 // Global variables
 
